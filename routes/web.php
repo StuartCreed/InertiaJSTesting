@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Auth\LoginController;
+use     App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ImagesController;
@@ -148,4 +148,10 @@ Route::get('500', function () {
     }
 
     echo $fail;
+});
+
+// Test
+
+Route::get('foo', function() {
+    return 'hello';
 });
